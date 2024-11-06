@@ -17,7 +17,7 @@
     <div class="dropdownmenu">
         <nav>
             <ul>
-                <li><a href="mainPage.html">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="404.html">Проекты</a></li>
                 <li><a href="taskList.html">Список задач</a></li>
                 <li class="active"><a href="#">О приложении</a></li>
@@ -45,6 +45,11 @@
 
     </div>
 
-    <script src="toggle.js"></script>
+    <script>
+    function toggleMenu(x) {
+        x.classList.toggle("change"); 
+        document.querySelector(".dropdownmenu ul").classList.toggle("show");
+    }</script>
+    <script src="bundle.js"></script>
 </body>
 </html>
