@@ -1,0 +1,60 @@
+/* Общие стили */
+html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c22;
+    color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 60px;
+    flex: 1;
+}
+
+footer {
+    background-color: #21301e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для ссылок футера */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto; /* Центрирование изображения и отступ сверху и снизу */
+    max-width: 25%; /* Для адаптивности на разных экранах */
+    height: auto;
+}

@@ -1,0 +1,111 @@
+.task-board {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.column {
+    width: 30%;
+    padding: 10px;
+    background-color: #006400; /* Сохранен из первого стиля */
+    border-radius: 5px;
+}
+
+.column h2 {
+    text-align: center;
+    color: white; /* Сохранен из первого стиля */
+}
+
+.task {
+    flex-wrap: wrap;
+    background-color: #006b17; /* Сохранен из первого стиля */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Добавлено из второго стиля для выравнивания содержимого */
+    justify-content: space-between; /* Добавлено из второго стиля для выравнивания содержимого */
+    align-items: center; /* Добавлено из второго стиля для выравнивания содержимого */
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.task button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.move-btn {
+    background-color: #007bff; /* Сохранен из первого стиля */
+}
+
+.delete-btn {
+    background-color: #ff4d4d; /* Сохранен из первого стиля */
+}
+
+/* Стили для кнопки "Добавить задачу" */
+.add-task-btn {
+    display: block;
+    margin: 20px auto; /* Изменено на 20px, сохранен из первого стиля */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Сохранен из первого стиля */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff; /* Заменен на белый из первого стиля */
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.modal button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #007bff; /* Сохранен из первого стиля */
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.close-btn {
+    background-color: #e0e0e0; /* Сохранен из первого стиля */
+    border: none;
+    border-radius: 3px;
+}
